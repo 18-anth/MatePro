@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="css/Style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/principal.css" type="text/css"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+         <title>
+                MatePro
+        </title>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script type="text/javascript">
+    var arrLang = new Array();
+    arrLang['en'] = new Array();
+    arrLang['es'] = new Array();
+    arrLang['be'] = new Array();
+    arrLang['ba'] = new Array();
+    arrLang['br'] = new Array();
+    arrLang['kr'] = new Array();  
+
+    // English content
+   
+    arrLang['en']['sum'] = 'SUM';
+    arrLang['en']['subtraction'] = 'SUBTRACTION';
+    arrLang['en']['multiplication'] = 'MULTIPLICATION';
+    arrLang['en']['division'] = 'DIVICION';
+    arrLang['en']['root'] = 'ROOT';
+    arrLang['en']['maximum'] = 'MAXIMUM OF ONE NUMBER';
+    arrLang['en']['minimum'] = 'MINIMUM OF ONE NUMBER';
+    arrLang['en']['potency'] = 'POTENCY';
+    arrLang['en']['sinus'] = 'SINUS';
+    arrLang['en']['cosine'] = 'COSINE';
+    arrLang['en']['tangent'] = 'TANGENT';
+    arrLang['en']['volume'] = 'CIRCUMFERENCE VOLUME';
+    arrLang['en']['perimeter'] = 'CIRCUMFERENCE PERIMETER';
+    arrLang['en']['logaritmo'] = 'NEPERIAN LOGARITHM';
+    arrLang['en']['welcome'] = 'Welcome to MatePro!';
+    arrLang['en']['first'] = 'Firts Number:';
+    arrLang['en']['second'] = 'Second Number:';
+    arrLang['en']['here'] = 'Here is the answer to your question!';
+    arrLang['en']['calcu'] = 'Calculate';
+    arrLang['en']['cube' ] = 'VOLUME OF A CUBE';
+    arrLang['en']['cilindrer'] ='VOLUME OF A CYLINDER' ;
+    arrLang ['en'] ['piramide'] = "VOLUME OF A PYRAMID";
+    arrLang ['en'] ['tetra'] = "VOLUME OF A TETRAHEDRON";
+    arrLang ['en'] ['cone'] = "VOLUME OF A CONE";
+    // Please change to your own language
+    //ESPANISH
+    arrLang['es']['sum'] = 'SUMA';
+    arrLang['es']['subtraction'] = 'RESTA';
+    arrLang['es']['multiplication'] = 'MULTIPLICACION';
+    arrLang['es']['division'] = 'DIVICION';
+    arrLang['es']['root'] = 'RAIZ CUADRADA';
+    arrLang['es']['maximum'] = 'NUMERO MAXIMO';
+    arrLang['es']['minimum'] = 'NUMERO MINIMO';
+    arrLang['es']['potency'] = 'POTENCIA';
+    arrLang['es']['sinus'] = 'SENO';
+    arrLang['es']['cosine'] = 'COSEMO';
+    arrLang['es']['tangent'] = 'TANGENTE';
+    arrLang['es']['volume'] = 'VOLUMEN DE LA CIRCUNFERENCIA';
+    arrLang['es']['perimeter'] = 'PERIMETRO DE LA CIRCUNFERENCIA';
+    arrLang['es']['logaritmo'] = 'LOGARITMO NEPERIANO';
+    arrLang['es']['welcome'] = 'Bienvenidos a MatePro!';
+    arrLang['es']['first'] = 'Primer Numero:';
+    arrLang['es']['second'] = 'Segundo Numero:';
+    arrLang['es']['here'] = '¡Aqui esta la respuesta a tu Duda!';
+    arrLang['es']['calcu'] = 'Calcular';
+    arrLang['es']['cube' ] = 'VOLUMEN DE UN CUBO';
+    arrLang['es']['cilindrer'] = 'VOLUMEN DE UN CILINDRO';
+    arrLang ['es'] ['piramide'] = "VOLUMEN DE UNA PIRAMIDE";
+    arrLang ['es'] ['tetra'] = "VOLUMEN DE UN TETRAEDRO";
+    arrLang ['es'] ['cono'] = "VOLUMEN DE UN CONO";
+    // Belgica content (Cambodian Language) 
+    // Please change to your own language
+    arrLang ['be'] ['sum'] = 'SUMMA';
+    arrLang ['be'] ['subtraction'] = 'SUBTRACT';
+    arrLang ['be'] ['multiplication'] = 'MONITOIMINTA';
+    arrLang ['be'] ['division'] = 'JAKELU';
+    arrLang ['be'] ['root'] = 'NELJÄN JUURI';
+    arrLang ['be'] ['maximum'] = 'MAKSIMI NUMERO';
+    arrLang ['be'] ['minimum'] = 'VÄHIMMÄINEN NUMERO';
+    arrLang ['be'] ['potency'] = 'TEHO';
+    arrLang ['be'] ['sinus'] = 'SINUS';
+    arrLang ['be'] ['cosine'] = 'COSEMO';
+    arrLang ['be'] ['tangent'] ='TANGENT';
+    arrLang ['be'] ['volume'] = 'YMPÄRISTÖÄENVOIMAKKUUS';
+    arrLang ['be'] ['perimeter'] = 'YMPÄRISTÖMITTARI';
+    arrLang ['be'] ['logaritmo'] = 'NEPERIAN LOGARITHM';
+    arrLang ['be'] ['welcome'] = 'Tervetuloa MatePro!';
+    arrLang ['be'] ['first'] = 'Ensimmäinen numero:';
+    arrLang ['be'] ['second'] = 'Toinen numero:';
+    arrLang['be']['here'] = 'Tässä on vastaus kysymykseesi!';
+    arrLang ['be'] ['calcu'] = 'Laske';
+    arrLang ['be'] ['cube']= 'KUUTION TILAVUUS';
+    arrLang ['be'] ['cilindrer']='SYLINTERIN TILAVUUS';
+    arrLang ['be'] ['piramide'] = "PYRAMIDIN TILAVUUS";
+    arrLang ['be'] ['tetra'] = "TETRAHEDRONIN TILAVUUS";
+    arrLang ['be'] ['cone'] = "KARTION VOIMAKKUUS";
+    // Bosnea content (Cambodian Language) 
+    // Please change to your own language
+    arrLang ['ba'] ['sum'] = 'ZUM';
+    arrLang ['ba'] ['subtraction'] = 'ODUZMI';
+    arrLang ['ba'] ['multiplication'] = 'MNOŽENJE';
+    arrLang ['ba'] ['division'] = 'PODJELA';
+    arrLang ['ba'] ['root'] = 'KVADRATNI KOREN';
+    arrLang ['ba'] ['maximum'] = 'MAKSIMALNI BROJ';
+    arrLang ['ba'] ['minimum'] = 'MINIMALNI BROJ';
+    arrLang ['ba'] ['potency'] = 'SNAGA';
+    arrLang ['ba'] ['sinus'] = 'SINUS';
+    arrLang ['ba'] ['cosine'] = 'COSEMO';
+    arrLang ['ba'] ['tangent'] = 'TANGENT';
+    arrLang ['ba'] ['volume'] = 'OBIM OKOLINE';
+    arrLang ['ba'] ['perimeter'] = 'PERIMETAR OKOLNOSTI';
+    arrLang ['ba'] ['logaritmo'] = 'NEPERIJSKI LOGARITAM';
+    arrLang ['ba'] ['welcome'] = 'Dobrodošli u MatePro!';
+    arrLang ['ba'] ['first'] = 'Prvi broj:';
+    arrLang ['ba'] ['second'] = 'Drugi broj:';
+    arrLang['ba']['here'] = 'Evo odgovora na vaše pitanje!';
+    arrLang ['ba'] ['calcu'] = 'Izračunaj';
+    arrLang ['ba'] ['cube'] = 'OBIM KOCKE';
+    arrLang ['ba'] ['cilindrer'] ='OBIM CILINDRA';
+    arrLang ['ba'] ['piramide'] = "OBIM PIRAMIDE";
+    arrLang ['ba'] ['tetra'] = "OBIM TETRAHEDRONA";
+    arrLang ['ba'] ['cone'] = "OBIM KONUSA";
+    // Brazil content (Cambodian Language) 
+    // Please change to your own language
+    arrLang ['br'] ['sum'] = 'SOMA';
+    arrLang ['br'] ['subtraction'] = 'SUBTRAIR';
+    arrLang ['br'] ['multiplication'] = 'MULTIPLICAÇÃO';
+    arrLang ['br'] ['division'] = 'DIVISÃO';
+    arrLang ['br'] ['root'] = 'ROOT SQUARE';
+    arrLang ['br'] ['maximum'] = 'NÚMERO MÁXIMO';
+    arrLang ['br'] ['minimum'] = 'NÚMERO MÍNIMO';
+    arrLang ['br'] ['potency'] = 'PODER';
+    arrLang ['br'] ['sinus'] = 'SINE';
+    arrLang ['br'] ['cosine'] = 'COSSEMO';
+    arrLang ['br'] ['tangent'] = 'TANGENT';
+    arrLang ['br'] ['volume'] = 'VOLUME DE CIRCUNFERÊNCIA';
+    arrLang ['br'] ['perimeter'] = 'PERÍMETRO DE CIRCUNFERÊNCIA';
+    arrLang ['br'] ['logaritmo'] = 'LOGARITMO NEPERIANO';
+    arrLang ['br'] ['welcome'] = 'Bem-vindo ao MatePro!';
+    arrLang ['br'] ['first'] = 'Primeiro número:';
+    arrLang ['br'] ['second'] = 'Segundo número:';
+    arrLang ['br'] ['here'] = 'Aqui está a resposta à sua pergunta!';
+    arrLang ['br'] ['calcu'] = 'Calcular';
+    arrLang ['br'] ['cube'] = 'VOLUME DE UM CUBO';
+    arrLang ['br'] ['cilindrer'] = 'VOLUME DE UM CILINDRO';
+    arrLang ['br'] ['piramide'] = "VOLUME DE UMA PIRÂMIDE";
+     arrLang ['br'] ['tetra'] = "VOLUME DE UM TETRAHEDRON";
+     arrLang ['br'] ['cone'] = "VOLUME DE UM CONE";
+    // korea del sur //
+    arrLang [ 'kr'] [ 'sum'] = '합집합';
+    arrLang [ 'kr'] [ 'subtraction'] =   '빼기';
+    arrLang [ 'kr'] [ 'multiplication'] =    '곱셈';
+    arrLang [ 'kr'] [ 'division'] = '분할';
+    arrLang [ 'kr'] [ 'root'] =  '뿌리';
+    arrLang [ 'kr'] [ 'maximum'] = '한 숫자의 최대 값';
+    arrLang [ 'kr'] [ 'minimum'] = '최소 하나의 숫자';
+    arrLang [ 'kr'] [ 'potency'] = '힘';
+    arrLang [ 'kr'] [ 'sinus'] =  '사인';
+    arrLang [ 'kr'] [ 'cosine'] =  '코사인'; 
+    arrLang [ 'kr'] [ 'tangent'] = '접선';
+    arrLang [ 'kr'] [ 'volume'] = '둘레 볼륨';
+    arrLang [ 'kr'] [ 'perimeter'] = '둘레 둘레';
+    arrLang [ 'kr'] [ 'logaritmo'] = 'NEPERIAN LOGARITHM';
+    arrLang [ 'kr'] [ 'welcome'] = 'Mate Pro에 오신 것을 환영합니다!';
+    arrLang [ 'kr'] [ 'first'] = '첫 번째 숫자 :';
+    arrLang [ 'kr'] [ 'second'] = '두 번째 숫자 :';
+    arrLang [ 'kr'] [ 'here'] = '여기에 질문에 대한 답이 있습니다!';
+    arrLang [ 'kr'] [ 'calcu'] = '계산';
+    arrLang [ 'kr'] ['cube'] = '큐브 볼륨';
+    arrLang [ 'kr'] ['cilindrer']='실린더 볼륨';
+    arrLang [ 'kr'] ['piramide']="피라미드의 부피" ;
+    arrLang [ 'kr'] ['tetra']="사면체의 부피"; 
+    arrLang [ 'kr'] ['cone']="콘의 양";
+    // Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
+  </script>
+    </head>
+
+    <body>
+        <div class="loader-container">
+            <div class="loader">
+                
+            </div>
+
+        </div>
+            
+           
+            <div class="banner_text">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About Our</a></li>
+                        <li><a href="#">Welcome MatePro</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="contenedor">
+
+                    <nav>
+                        <div class="lang-menu  header-content">
+              
+                                <button id="en" class="translate">English</button>
+        
+                                <button id="es" class="translate">Spanish</button>
+
+                                <button id="be" class="translate">Belgium</button>
+
+                                <button id="ba" class="translate">Bosnia and Herzegovina</button>
+
+                                <button id="br" class="translate">Brazil</button>
+                               
+                                <button id="kr" class="translate">South Korea</button>
+                                  
+                              <br>
+ 
+                        </div>
+                    </nav>
+                  <div class="login">
+                        <article class="fondo">
+                       
+                                <h2 key="welcome" class="lang">
+                                    Welcome to MatePro!
+                                </h2>
+                                <div class="container_conter">
+
+                                </div>
+                                <form action="procesar.jsp" method="POST">
+
+                                    <table border="0">
+                                            <tr>                                               
+                                                <td><input type="text" name="txtnum1" value="" placeholder="Enter Number" /> </td>
+                                            
+                                               <td>
+                                            <select name="operation">
+                                                <option value="15" key=" " class="lang">     </option>
+                                                <option value="16" key="cube" class="lang">VOLUME OF A CUBE</option>
+                                                <option value="17" key="cilindrer" class="lang">VOLUME OF A CYLINDER</option> 
+                                                <option value="18" key="tetra" class="lang">VOLUME OF A TETRAHEDRON</option> 
+                                                <option value="19" key="cone" class="lang">VOLUME OF A CONE</option>
+                                                <option value="20" key="piramide" class="lang">VOLUME OF A PYRAMID</option>
+                                                </select>
+                                
+                                            <select name="operaciones">
+                                                <option value="0" key=" " class="lang">   </option>
+                                                <option value="1" key="sum" class="lang">SUM</option>
+
+                                                <option value="2" key="subtraction" class="lang">SUBTRACTION</option>
+
+                                                <option value="3" key="multiplication" class="lang">MULTIPLICATION</option>
+
+                                                <option value="4" key="division" class="lang">DIVISION</option>
+
+                                                <option value="5" key="root" class="lang">ROOT</option>
+
+                                                <option value="6" key="maximum" class="lang">MAXIMUM OF ONE NUMBER</option>
+
+                                                <option value="7" key="minimum" class="lang">MINIMUM OF ONE NUMBER</option>
+
+                                                <option value="8" key="potency" class="lang">POTENCY</option>
+
+                                                <option value="9" key="sinus" class="lang">SINUS</option>
+
+                                                <option value="10" key="cosine" class="lang">COSINE</option>
+
+                                                <option value="11" key="tangent" class="lang">TANGENT</option>
+
+                                                <option value="12" key="volume" class="lang">CIRCUMFERENCE VOLUME</option>
+
+                                                <option value="13" key="perimeter" class="lang">CIRCUMFERENCE PERIMETER</option>
+
+                                                <option value="14" key="logaritmo" class="lang">NEPERIAN LOGARITHM</option>
+                                                
+                                            </select>
+
+                                              </td>
+
+                                            </tr>
+
+                                            <tr>                                                 
+                                              
+                                                <td><input type="text" name="txtnum2" value="" placeholder="Enter Number"/></td>
+                                                          
+                                                <td><button key="calcu" class="translate lang" type="submit" value="Calculate">Calculate</button></td>
+                                                
+                                            </tr>                
+                                  
+                                    </table>                           
+                                            
+                                </form>
+                           
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="animation_area">
+              <ul class="box_area">
+                <li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li><li></li>
+                <li></li><li></li><li></li>
+              </ul>                    
+            </div>
+            <div class="container-fooder">
+                <footer>
+                    <br> 
+                    <hr>
+                    <h4>
+                        @CopyRigth MatePro 2021 - Todos los Derechos Reservados
+                    </h4>
+                    <br>
+                </footer>
+            </div>
+    <script>
+        $(window).on("load", function() {
+            $(".loader-container").fadeOut(4000);
+        });
+    </script>
+    <script src="js/desplegable.js">
+        
+    </script>
+    </body>
+
+</html>

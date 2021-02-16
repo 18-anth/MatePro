@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/02/2021, 16:18:17
+    Author     : antho
+*/
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+body{
+    text-align: center;
+}
+/*-------------------------------PANTALLA DE CARGA---------------------------------------------------*/
+@keyframes loader{
+    20%{
+        color: #fcff47;
+    }
+    40%{
+        color: #fc653f;
+    }
+    60%{
+        color: #fc3f48;
+    }
+    80%{
+        color: a,#b341ff;
+    }
+    100%{
+        color: #6f48fc;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*------------------------------------folder de pie de pagina----------------------------------------*/
+
+.container-fooder{
+    width: 100%;
+   
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+}
+
+.container-fooder hr{
+    border: none;
+    height: 2px;
+    background: #000;
+}
+.container-fooder h4{
+    text-align:center;
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+}
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+.loader{
+    width: 500px;
+    height: 500px;
+    border: 10px solid;
+    
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+

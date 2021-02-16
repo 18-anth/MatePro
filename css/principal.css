@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/02/2021, 14:54:10
+    Author     : antho
+*/
+.menuIcon {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    cursor: pointer;
+}
+.rest{
+    justify-content: center;
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: rgba(177, 175, 175, 0.281);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rest:hover{
+    opacity: 0.4;
+}
+.translate{
+    padding: 6px ;
+    margin: 10px;
+    font-size: 20px;
+    background: rgba(230, 225, 225, 0.705);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    
+}
+.translate:hover{
+    opacity: 0.4;
+}
+.header-content {
+    width: 100%;
+    
+    display: flex;
+   
+}
+
+/*=? =========== Tamaño para los dispositivos =============*/
+@media screen and (max-width:1220px){
+    .header-content, 
+    .barner_text {
+        max-width: 1000px;
+        padding: 0 20px;
+    } 
+
+}
+@media screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translateX(300px);
+    }
+}
+@media screen and (max-width: 400px){
+    .banner_text{
+        width: 300px;
+        height: 400px;
+    }
+
+}
